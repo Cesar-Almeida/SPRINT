@@ -1,0 +1,205 @@
+/*Global*/
+
+
+/*Slide Show*/
+
+.slidershow{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.middle{
+  position: relative;
+
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+/*Texto*/
+.esquerda{
+  margin: 3%;
+  float: left;
+  width: 25%;
+  background-color:  #ffffffa9;
+  border-bottom:   #192537 3px solid;
+  min-width: 215px; 
+  min-height: 410px;
+  border-radius: 10px; 
+  height: auto;
+  padding: 10px;
+  text-align: justify;
+}
+
+.nebular{
+  width: 100%;
+  height: 520px;
+  background-color: rgba(0, 26, 255, 0.267);
+}
+
+/*Divisor*/
+.divisor{
+  clear: both;
+  width: 100%;
+  height: 5px;
+  background-color: #17181b;
+}
+
+.fotos{
+  overflow: hidden;
+  float: right;
+  width: 65%;
+  height: 450px;
+  border-radius: 20px 20px ; 
+  padding-top: 20px;
+  margin: 5px;
+}
+
+/*Localização*/
+.localizacao{
+  min-height: 600px;
+  background: url('imgcss/local.jpg') no-repeat;
+  background-size: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.localizacao h1{
+  text-align: center;
+  color: #192537;
+}
+
+/*Método*/
+.metodo{
+  text-align: center;
+  color: #17181b;
+  font-size: 20px;
+}
+.metodo img{
+width: 60px;
+}
+
+/*Títulos*/
+#Titulo{
+  text-align: center;
+  color: #09113a;
+}
+
+/*Vídeo*/
+#video{
+padding-left: 30%;
+}
+
+/*Planos*/
+.plano{
+height: 500px;
+margin: 5px;
+}
+
+/*Pacotes*/
+.pacote{
+  margin: 3%;
+  float: left;
+  width: 25%;
+  background-color:  #ffffffa9;
+  border-bottom:   #192537 5px solid;
+  min-width: 215px; 
+  min-height: 410px;
+  border-radius: 10px; 
+  height: auto;
+  padding: 10px;
+  text-align: justify;
+}
+
+/*Dashboard*/
+.dash{
+  width: 100%;
+  min-height: 800px; 
+  margin-top: 10px;
+  background-color: #17181b;
+  border-radius: 5px; 
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+#linha{
+margin: auto;
+height: 280px ;
+width: 80%;
+background-image: url('../img/linha.png') ;
+}
+#textoesq{
+ float: left;
+ margin-left: 13%; 
+}
+#both{
+  clear: both;
+}
+#rosquinha{
+  margin-left: 10%;
+  height: 210px ;
+  width: 10%;
+  background-image: url('../img/rosquinha.png') ;
+  }
+
+#regiao{
+  float: right;
+  margin-top: -210px;
+  margin-right: 10%;
+  height: 450px ;
+  width: 35%;
+  background-image: url('../img/regiao.png') ;
+  }

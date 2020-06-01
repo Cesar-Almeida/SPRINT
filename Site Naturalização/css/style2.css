@@ -1,0 +1,96 @@
+/*LOGIN*/
+.logar{
+background: url('imgcss/castle.jpg') no-repeat;
+background-size: 100% 100%;
+min-height: 600px;
+}
+
+.Cadastrar{
+background: url('imgcss/montanha.jpg') no-repeat;
+background-size: 100% 100%;
+min-height: 800px;
+}
+
+.espaco{
+    margin-top: 100px;
+}
+
+.box{
+    width: 25%;
+    padding: 10px;
+    background-color: #363636;
+    text-align: center;
+    color: white;
+    margin-left: 37.5%;
+    border-radius: 24px;
+    margin-bottom: 100px;
+}
+
+.logar a{
+    text-decoration: none;
+    color: #5161FA;
+}
+
+.box h1{
+    color: white;
+    font: bold;
+    letter-spacing: 0.2;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: arial;
+    text-transform: uppercase;
+}
+.box .input, .select{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid white;
+    padding:10px 10px;
+    width:70%;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.15s;
+    background-color: #363636;
+}
+
+.box .input:focus{
+    width: 280px;
+    border: 2px solid #323C9A;
+
+}
+.select:focus{
+    width: 310px;
+    border: 2px solid #323C9A;
+
+}
+.select{
+    width: 220px;
+}
+.btn{
+    border:0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border:2px solid white;
+    padding:20px;
+    width:100px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.15s;
+}
+.btn:hover{
+    background-color: #323C9A;
+    border: 3px solid #323C9A;
+}
+
+/*Check*/
+#check4{
+    background-color: #323C9A;
+    width: 15px;
+    height: 15px;
+}
