@@ -8,7 +8,7 @@ min-height: 600px;
 .Cadastrar{
 background: url('imgcss/montanha.jpg') no-repeat;
 background-size: 100% 100%;
-min-height: 800px;
+min-height: 1000px;
 }
 
 .espaco{
@@ -86,6 +86,17 @@ min-height: 800px;
 .btn:hover{
     background-color: #323C9A;
     border: 3px solid #323C9A;
+}
+.field-group select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #363636;
+    border: none;
+    color: #fff;
+    width: 100%;
+    /*Buscar algo que verdadeiramente centralize*/
+    padding-left: 37%;
 }
 
 /*Check*/

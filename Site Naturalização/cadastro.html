@@ -38,6 +38,23 @@
     <input type="text"class="input" placeholder="Primeiro Nome">
     <input type="text"class="input" placeholder="Segundo Nome">
     <input type="text"class="input" placeholder="Sobrenome">
+    <!--Agrupamento de dados localidade-->
+    <div class="field-group">
+        <div class="input">
+                <label for="state">Estado:</label>
+                <select name="uf">
+                    <option value="">Clique Aqui</option>
+                </select>
+                <input type="hidden" name="state">
+        </div>
+        <div class="input">
+            <label for="city">Cidade:</label>
+            <select name="city">
+                <option value="" disabled>Selecione a Cidade</option>
+            </select>
+        </div>
+    </div>
+</fieldset>
     <input type="email"class="input" placeholder="Email">
     <input type="password"class="input" placeholder="Senha">
     <input type="password" class="input"placeholder="Confirmar Senha">
@@ -74,3 +91,43 @@
     </div>
 </body>
 </html>
+<script>
+function populateUFs() {
+    const ufSelect = document.querySelector("select[name=uf]")
+
+    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+    .then( res => res.json() )
+    .then( states => {
+
+        for ( const state of states ) {
+            ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
+        }
+
+    })
+}
+
+function getCities(event){
+    const citySelect=document.querySelector("select[name=city]")
+    const stateInput=document.querySelector("input[name=state]")
+        console.log(event.target.value)
+        const ufvalue =event.target.value
+        const indexOfSelectedState = event.target.selectedIndex
+        stateInput.value= event.target.options[indexOfSelectedState].text
+        const url =`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufvalue}/municipios`
+    fetch(url)
+    .then( res => res.json() )
+    .then( cities => {
+
+    for ( const city of cities ) {
+        citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`
+    }
+    citySelect.disable = false
+    })
+}
+
+populateUFs()
+
+document
+.querySelector("select[name=uf]")
+.addEventListener("change", getCities)
+</script>
