@@ -90,3 +90,43 @@ form button{
 form button:hover{
     background-color: #27b86e;
 }
+.items-grid{
+    display: grid;
+    /* Para separar as colunas em tamanho específico */
+    /* grid-template-columns: 200px 200px 200px; */
+    /* Para separar as colunas auto */
+    /* A quant. que repitir será o número de culunas criadas */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Um margin melhor que funciona dentro do grid separando os itens que está nele */
+    gap: 16px;
+}
+.items-grid li{
+    background-color: #f5f5f5;
+    list-style: none;
+    border: 2px solid #f5f5f5;
+    height: 180px;
+    border-radius: 8px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* Faz ser a mãozinha ao invés da seta */
+    cursor: pointer;
+}
+.items-grid li span{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
+    font: bold;
+    text-align: center;
+}
+.items-grid li.selected{
+    background: #e1faec;
+    border: 2px solid #34cb79;
+}
+/* feito para que quando clicar na imagem ou no texto o js não pega-los mas sim o li */
+.items-grid li span, .items-grid li img{
+    pointer-events: none;
+}
