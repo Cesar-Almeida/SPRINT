@@ -87,6 +87,7 @@ min-height: 1000px;
     background-color: #323C9A;
     border: 3px solid #323C9A;
 }
+/* Estados e Cidades */
 .field-group select{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -105,3 +106,4 @@ min-height: 1000px;
     width: 15px;
     height: 15px;
 }
+

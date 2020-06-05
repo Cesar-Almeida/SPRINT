@@ -30,7 +30,7 @@
         <div class="container">
 
             <div class="title-header">
-                <img src="img/LogoC.png" id="LogoC" >
+                <a href="Familia.html"><img src="img/LogoC.png" id="LogoC" ></a>
             </div>
             <div class="nav">
                 <ul>
@@ -52,19 +52,25 @@
                 <div class="metodo"><img src="img/user.png"><br>Individual</div>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ad mollitia dolores, quibusdam earum, harum cumque qui similique doloremque vitae corrupti tempora dolorem accusantium repellendus rem temporibus eum molestias labore.
                 </h3> 
-                <div id="valorindividual"></div>     
+                <div class="valor">
+                    <div id="valorindividual"></div>
+                </div>     
             </div>
             <div class="pacote" id='casal' onclick="borderblue()">
                 <div class="metodo"><img src="img/couple.png"><br>Casal</div>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ad mollitia dolores, quibusdam earum, harum cumque qui similique doloremque vitae corrupti tempora dolorem accusantium repellendus rem temporibus eum molestias labore.
-                </h3>    
-                <div id="valorcasal"></div> 
+                </h3>
+                <div class="valor">
+                    <div id="valorcasal"></div>
+                </div>        
             </div>
             <div class="pacote" id='familia' onclick="bordergold()">
                 <div class="metodo"><img src="img/family.png"><br>Família</div>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ad mollitia dolores, quibusdam earum, harum cumque qui similique doloremque vitae corrupti tempora dolorem accusantium repellendus rem temporibus eum molestias labore.
-                </h3>   
-                <div id="valorfamilia"></div> 
+                </h3>
+                <div class="valor">  
+                    <div id="valorfamilia"></div> 
+                </div> 
             </div>     
         </div>
     </div>
@@ -94,31 +100,6 @@
             © copyright <b>Genus Nostrum</b>. All Rights Reserved. <br>
             Design by <b>César de Moura Almeida.</b>
         </div>
+<script src="scripts/planos.js"></script>
 </body>
 </html>
-<script>
-function bordergreen(){
-    document.getElementById("individual").style.backgroundColor="rgba(11, 71, 11, 0.7)";
-    document.getElementById("casal").style.backgroundColor="#ffffffa9";
-    document.getElementById("familia").style.backgroundColor="#ffffffa9";
-    valorindividual.innerHTML='1';
-    valorcasal.innerHTML='';
-    valorfamilia.innerHTML='';
-}
-function borderblue(){
-    document.getElementById("individual").style.backgroundColor="#ffffffa9";
-    document.getElementById("casal").style.backgroundColor="rgba(11, 20, 71, 0.63)";
-    document.getElementById("familia").style.backgroundColor="#ffffffa9";
-    valorcasal.innerHTML='2';
-    valorindividual.innerHTML='';
-    valorfamilia.innerHTML='';
-}
-function bordergold(){
-    document.getElementById("individual").style.backgroundColor="#ffffffa9";
-    document.getElementById("casal").style.backgroundColor="#ffffffa9";
-    document.getElementById("familia").style.backgroundColor="rgba(238, 255, 0, 0.63)";
-    valorfamilia.innerHTML='3';
-    valorindividual.innerHTML='';
-    valorcasal.innerHTML='';
-}
-</script>

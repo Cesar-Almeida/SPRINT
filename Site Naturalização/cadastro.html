@@ -14,7 +14,7 @@
 <div class="header">
         <div class="container">
             <div class="title-header">
-              <img src="img/LogoC.png" id="LogoC" >
+                <a href="Familia.html"><img src="img/LogoC.png" id="LogoC" ></a>
             </div>
             <div class="nav">
                 <ul>
@@ -34,30 +34,31 @@
 <div class="espaco"></div>
 <form class="box" action="Familia.html">
     <h1>Cadastro</h1>
-    <input type="text"class="input" placeholder="Nome Completo">
-    <input type="text"class="input" placeholder="Primeiro Nome">
-    <input type="text"class="input" placeholder="Segundo Nome">
-    <input type="text"class="input" placeholder="Sobrenome">
+    <input type="text"class="input" placeholder="Nome Completo" required>
+    <input type="text"class="input" placeholder="Primeiro Nome" required>
+    <input type="text"class="input" placeholder="Segundo Nome" required>
+    <input type="text"class="input" placeholder="Sobrenome" required>
     <!--Agrupamento de dados localidade-->
     <div class="field-group">
         <div class="input">
                 <label for="state">Estado:</label>
-                <select name="uf">
+                <select name="uf" required>
                     <option value="">Clique Aqui</option>
                 </select>
                 <input type="hidden" name="state">
         </div>
         <div class="input">
             <label for="city">Cidade:</label>
-            <select name="city">
-                <option value="" disabled>Selecione a Cidade</option>
+            <!-- disabled retirado -->
+            <select name="city" required >
+                <option value="">Selecione a Cidade</option>
             </select>
         </div>
     </div>
 </fieldset>
-    <input type="email"class="input" placeholder="Email">
-    <input type="password"class="input" placeholder="Senha">
-    <input type="password" class="input"placeholder="Confirmar Senha">
+    <input type="email"class="input" placeholder="Email" required>
+    <input type="password"class="input" placeholder="Senha" required>
+    <input type="password" class="input"placeholder="Confirmar Senha" required>
     <input type="submit" class="btn" value="Cadastrar">
     <h3>Gostaria de receber notificações?<input type="checkbox" name="Opção 1" value="Opção_1" id="check4"></h3>
   </div>
@@ -114,15 +115,16 @@ function getCities(event){
         const indexOfSelectedState = event.target.selectedIndex
         stateInput.value= event.target.options[indexOfSelectedState].text
         const url =`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufvalue}/municipios`
-    fetch(url)
-    .then( res => res.json() )
-    .then( cities => {
-
-    for ( const city of cities ) {
-        citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`
-    }
-    citySelect.disable = false
-    })
+        citySelect.innerHTML =""
+        // citySelect.disable = true
+        fetch(url)
+        .then( res => res.json() )
+        .then( cities => {
+        for ( const city of cities ) {
+            citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`
+        }
+        // citySelect.disable = false
+        })
 }
 
 populateUFs()
