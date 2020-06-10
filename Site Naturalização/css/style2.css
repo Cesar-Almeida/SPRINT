@@ -8,7 +8,7 @@ min-height: 600px;
 .Cadastrar{
 background: url('imgcss/montanha.jpg') no-repeat;
 background-size: 100% 100%;
-min-height: 1000px;
+min-height: 1200px;
 }
 
 .espaco{
@@ -96,8 +96,9 @@ min-height: 1000px;
     border: none;
     color: #fff;
     width: 100%;
-    /*Buscar algo que verdadeiramente centralize*/
-    padding-left: 37%;
+    /* Ele pega o ultimo elemento do elemento pai */
+    /* Pega o que será preenchido futuramente e alinha */
+    text-align-last: center;
 }
 
 /*Check*/
