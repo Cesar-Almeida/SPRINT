@@ -1,0 +1,127 @@
+/*Dashboard*/
+.dash{
+  width: 100%;
+  min-height: 600px; 
+  margin-top: 10px;
+  background-color: #17181b;
+  border-radius: 5px; 
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#linha{
+margin: auto;
+height: 280px ;
+width: 80%;
+background-image: url('../img/linha.png') ;
+}
+#textoesq{
+ float: left;
+ margin-left: 13%; 
+}
+#both{
+  clear: both;
+}
+#doughnut{
+  margin-left: 6%;
+  height: 250px ;
+  width: 100%;
+  }
+
+#regiao{
+  background-image: url('../img/regiao.png');
+  float: right;
+  margin-top: -210px;
+  margin-right: 10%;
+  height: 240px ;
+  width: 40%;
+  }
+  .valor{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font: bold;
+    font-size: 15px;
+    color: #fff;
+}
+.fundo{
+    height: 400px;
+    background-color: rgba(5, 26, 77, 0.37);
+    border-radius: 8px;
+}
+.conta{
+    width: 98%;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+.conta h1{
+    text-align: center;
+    color: #fff;
+}
+.conta input{
+    height: 40px;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.conta #NomeCompleto{
+    width: 100%;
+    border-radius: 8px;
+}
+.conta #PN{
+    width: 33%;
+    border-radius: 8px 0px 0px 8px;
+}
+.conta #SN{
+    width: 34%;
+    margin-left: -4px;
+}
+.conta #SON{
+    width: 33%;
+    margin-left: -4px;
+    border-radius: 0px 8px 8px 0px;
+}
+.conta #CPF{
+    width: 40%;
+    border-radius: 8px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+.conta #RG{
+    width: 40%;
+    border-radius: 8px;
+}
+.conta #UF{
+    width: 50%;
+    border-radius: 8px 0px 0px 8px;
+}
+.conta #CD{
+    width: 50%;
+    margin-left: -4px;
+    border-radius: 0px 8px 8px 0px;
+}
+.conta #LG{
+    width: 40%;
+    border-radius: 8px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+.conta #SE{
+    width: 40%;
+    border-radius: 8px;
+}
+.espaco2{
+    width: 100%;
+    height: 15px;
+}
+/* Doughnut */
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0};

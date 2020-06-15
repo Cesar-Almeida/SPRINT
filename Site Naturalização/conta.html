@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/style4.css">
     <link rel="icon" href="img/worldwide.png">
-    <title>Processo</title>
+    <title>Conta</title>
 </head>
 <body>
     <!--CABEÇALHO/MENU-->
@@ -36,39 +36,33 @@
             </div>
             <div class="nav">
                 <ul>
-                    <li class="current"><a href="dashboard.html">Processo</a></li>
-                    <li><a href="conta.html">Conta</a></li>
+                    <li><a href="dashboard.html">Processo</a></li>
+                    <li class="current"><a href="conta.html">Conta</a></li>
                 </ul>
             </div>
 
         </div>
     </div>
-    <!--Dash-->
+    <!--Conta-->
     <div class="container">
-    <div class="dash">
-        <div class="texto">Crescimento da Dupla Nacionalização</div>
-        <div id="linha"></div>
-        <div id="textoesq">Documentação</div><div id="both"></div>
-        <div id="doughnut">
-            <div id="canvas-holder" style="width:40%"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-            <canvas id="chart-area" style="display: block; width: 540px; height: 270px;" width="540" height="270" class="chartjs-render-monitor"></canvas>
-            </div>
-            <div id="confgrafico" style="display: none">
-                <button id="randomizeData">Randomize Data</button>
-                <button id="addDataset">Add Dataset</button>
-                <button id="removeDataset">Remove Dataset</button>
-                <button id="addData">Add Data</button>
-                <button id="removeData">Remove Data</button>
-                <button id="changeCircleSize">Semi/Full Circle</button>
-            </div>
+        <div class="fundo">
+        <div class="conta">
+            <h1>Dados Pessoais</h1>
+            <input type="text" id="NomeCompleto" placeholder="Nome Completo" autofocus>
+            <input type="text" id="PN" placeholder="Primeiro Nome">
+            <input type="text" id="SN" placeholder="Segundo Nome">
+            <input type="text" id="SON" placeholder="Sobrenome">
+            <input type="text" id="CPF" placeholder="CPF" disabled>
+            <input type="text" id="RG" placeholder="RG" disabled>
+            <input type="text" id="UF" placeholder="Estado" disabled>
+            <input type="text" id="CD" placeholder="Cidade" disabled>
+            <h1>Login</h1>
+            <input type="email" id="LG" placeholder="Email" disabled>
+            <input type="password" id="SE" placeholder="Senha" disabled>
         </div>
-        <!--<div id="textodir">Locais</div><div id="both"></div>-->
-        <div id="box-grafico">
-        <div id="regiao"></div>
         </div>
     </div>
-    </div>
-    
+    <div class="espaco2"></div>
     <!--RODAPÉ-->
         <div class="footer">
             <div class="container-footer-left">
